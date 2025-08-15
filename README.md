@@ -147,7 +147,7 @@ topic-tracker/
 - [ ] User authentication (login, signup)
 - [ ] Due dates/reminders for topics
 - [ ] Analytics dashboard
-- [ ] Dark mode!
+- [ ] Theme Change!
 
 ---
 
