@@ -4,15 +4,14 @@ Welcome to **Topic Tracker**!
 This is my **first project** built using [Socket.IO](https://socket.io/), designed as a personal **learning tracker**. Track what you’re learning, see your progress in real time, and organize your study journey – all in one modern, responsive app!
 
 ## Screenshots
-
 <table>
   <tr>
-    <td><img src="public/assets/SS1.png" alt="SS1" width="300"/></td>
-    <td><img src="public/assets/SS2.png" alt="SS2" width="300"/></td>
+    <td><img src="public/assets/SS1.png" alt="SS1" width="500"/></td>
+    <td><img src="public/assets/SS2.png" alt="SS2" width="500"/></td>
   </tr>
   <tr>
-    <td><img src="public/assets/SS3.png" alt="SS3" width="300"/></td>
-    <td><img src="public/assets/SS4.png" alt="SS4" width="300"/></td>
+    <td><img src="public/assets/SS3.png" alt="SS3" width="500"/></td>
+    <td><img src="public/assets/SS4.png" alt="SS4" width="500"/></td>
   </tr>
 </table>
 
@@ -54,20 +53,20 @@ This is my **first project** built using [Socket.IO](https://socket.io/), design
 
 1. **Clone this repository:**
 
-git clone https://github.com/ExploreWithMeet/topic-tracker.git
-cd topic-tracker
+   - git clone https://github.com/ExploreWithMeet/topic-tracker.git  
+   - cd topic-tracker
 
 2. **Install all dependencies:**
 
-npm install
+   - npm install
 
 3. **Database Configuration:**
 
-- Make an `.env` file, to store credentials.
-- Navigate to `config/database.js`
-- Update these fields **(Your Settings will come from .env file!):**
+   - Make an `.env` file, to store credentials.
+   - Navigate to `config/database.js`
+   - You can use `.env` file if you want to make it private or else for learning you can directly mention. no need to use `process.env.KEY`.
 
-  ```
+```
   development: {
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
@@ -79,16 +78,14 @@ npm install
   }
   ```
 
-- You can use `.env` file if you want to make it private or else for learning you can directly mention. no need to use `process.env.KEY`.
-
 4. **(About Socket Library)**
 
-- I had installed socket.io package through node package manager.
-- But If you dont want to do that than call CDN library from ![socket.io](https://socket.io/docs/v4/client-installation/)
+   - I had installed socket.io package through node package manager.
+   - But If you dont want to do that than call CDN library from ![socket.io](https://socket.io/docs/v4/client-installation/)
 
 5. **Fire Up the App:**
 
-npm run dev
+   - npm run dev
 
 ## 🌐 REST API Endpoints
 
@@ -104,34 +101,35 @@ npm run dev
 ---
 
 ## 🧩 Project Structure
-
+```
+topic-tracker/
 │
 ├── public/
-│ ├── index.html # Main Frontend
-│ ├── script.js # Frontend Logic
-│ └── style.css # Styling
+│ ├── index.html 
+│ ├── script.js 
+│ └── style.css 
 │
 ├── models/
-│ ├── index.js # Connect all Sequelize Models
-│ └── Topic.js # Topic Model
+│ ├── index.js 
+│ └── Topic.js 
 │
 ├── routes/
-│ └── topics.js # Routing to validate & controller
+│ └── topics.js 
 │
 ├── controllers/
-│ └── topicController.js # Acutal Backend Logic
+│ └── topicController.js 
 │
 ├── middleware/
-│ └── validate.js # Validation of Topic like add, remove, edit, toggle status.
+│ └── validate.js 
 │
 ├── config/
-│ └── database.js # DB configuration
+│ └── database.js 
 │
-├── server.js # Express root
-├── socket.js # Socket.IO backend
+├── server.js 
+├── socket.js 
 ├── package.json
 └── README.md
-
+```
 ---
 
 ## 🔒 Security Notes
@@ -160,6 +158,3 @@ If you run into trouble, want to submit ideas, or just want to say hi:
 - Open an Issue [here](https://github.com/ExploreWithMeet/topic-tracker/issues)
 - Or reach out: meetsanghvi2347@gmail.com
 
----
-
-**Happy Learning! 🚀**
